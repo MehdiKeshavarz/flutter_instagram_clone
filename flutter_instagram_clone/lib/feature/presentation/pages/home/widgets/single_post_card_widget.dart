@@ -57,6 +57,8 @@ class SinglePostCardWidget extends StatelessWidget {
             ],
           ),
           sizeVer(10),
+         const Text('34 likes',style: TextStyle(color: primaryColor,fontWeight: FontWeight.bold)),
+          sizeVer(10),
           Row(
             children: [
               const Text('UserName',style: TextStyle(color: primaryColor,fontWeight: FontWeight.bold)),
