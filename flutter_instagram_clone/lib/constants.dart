@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 
-const backGroundColor = Color.fromRGBO(0, 0, 0, 1.0);
+const backGroundColor = Color(0xff1C1F2E);
 const blueColor = Color.fromRGBO(0, 149, 246, 1);
 const primaryColor = Colors.white;
 const secondaryColor = Colors.grey;
