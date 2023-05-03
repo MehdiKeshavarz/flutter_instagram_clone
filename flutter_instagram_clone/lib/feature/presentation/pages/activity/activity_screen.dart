@@ -7,9 +7,17 @@ class ActivityScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text('ActivityScreen',style: TextStyle(color: primaryColor),),
+      backgroundColor: backGroundColor,
+      appBar: AppBar(
+        backgroundColor: backGroundColor,
+        title:const Text('Activity',style: TextStyle(color: primaryColor)),
+        elevation: 0,
       ),
+      body:Column(
+        children: const [
+         Text('ActivityScreen')
+        ],
+      )
     );
   }
 }
