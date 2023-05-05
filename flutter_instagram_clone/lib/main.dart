@@ -3,6 +3,8 @@ import 'package:flutter_instagram_clone/feature/presentation/pages/credential/si
 import 'package:flutter_instagram_clone/feature/presentation/pages/credential/sign_up_page.dart';
 import 'package:flutter_instagram_clone/feature/presentation/pages/main_screen/main_screen.dart';
 
+import 'on_generate_route.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -16,8 +18,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "instagram",
+      onGenerateRoute: OnGenerateRoute.route,
       theme: ThemeData.dark(),
-      home: MainScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const MainScreen()
+      },
     );
   }
 }

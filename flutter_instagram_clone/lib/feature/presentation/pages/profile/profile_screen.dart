@@ -143,7 +143,8 @@ class ProfileScreen extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 10.0),
                       child: GestureDetector(
                         onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => EditProfilePage()));
+                          Navigator.pushNamed(context, PageConst.editProfilePage);
+                         // Navigator.push(context, MaterialPageRoute(builder: (context) => EditProfilePage()));
                         },
                           child: const Text('Edit Profile',
                               style: TextStyle(

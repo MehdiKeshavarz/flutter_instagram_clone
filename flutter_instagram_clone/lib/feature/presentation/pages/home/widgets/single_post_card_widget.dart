@@ -62,9 +62,7 @@ class SinglePostCardWidget extends StatelessWidget {
                   sizeHor(10),
                   GestureDetector(
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context){
-                          return CommentPage();
-                        }));
+                        Navigator.pushNamed(context, PageConst.commentPage);
                       },
                       child: const Icon(Feather.message_circle, color: primaryColor)),
                   sizeHor(10),
@@ -130,7 +128,7 @@ class SinglePostCardWidget extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 10.0),
                       child: GestureDetector(
                           onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => UpdatePostPage()));
+                           Navigator.pushNamed(context, PageConst.updatePostPage);
                           },
                           child: const Text('Edit Post',
                               style: TextStyle(
