@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_instagram_clone/constants.dart';
 import 'package:flutter_instagram_clone/feature/presentation/pages/credential/sign_up_page.dart';
-import 'package:flutter_instagram_clone/feature/presentation/pages/credential/widgtes/button_container_widget.dart';
-import 'package:flutter_instagram_clone/feature/presentation/pages/credential/widgtes/form_container_widget.dart';
+import 'package:flutter_instagram_clone/feature/presentation/widgets/button_container_widget.dart';
+import 'package:flutter_instagram_clone/feature/presentation/widgets/form_container_widget.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
 class SignInPage extends StatelessWidget {

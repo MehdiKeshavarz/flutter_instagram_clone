@@ -24,32 +24,34 @@ class EditProfilePage extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10.0,vertical: 10.0),
-        child: Column(
-          children: [
-            Center(
-              child: Container(
-                height: 100,
-                width: 100,
-                decoration: BoxDecoration(
-                  color: secondaryColor,
-                  borderRadius: BorderRadius.circular(60)
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Center(
+                child: Container(
+                  height: 100,
+                  width: 100,
+                  decoration: BoxDecoration(
+                    color: secondaryColor,
+                    borderRadius: BorderRadius.circular(60)
+                  ),
                 ),
               ),
-            ),
-            sizeVer(15),
-            const Center(
-              child: Text('change profile photo',style: TextStyle(color: blueColor,fontSize: 20,fontWeight: FontWeight.w400),),
-            ),
-            sizeVer(15),
-            ProfileFormWidget(title: 'Name'),
-            sizeVer(15),
-            ProfileFormWidget(title: 'UserName'),
-            sizeVer(15),
-            ProfileFormWidget(title: 'Website'),
-            sizeVer(15),
-            ProfileFormWidget(title: 'Bio'),
+              sizeVer(15),
+              const Center(
+                child: Text('change profile photo',style: TextStyle(color: blueColor,fontSize: 20,fontWeight: FontWeight.w400),),
+              ),
+              sizeVer(15),
+              ProfileFormWidget(title: 'Name'),
+              sizeVer(15),
+              ProfileFormWidget(title: 'UserName'),
+              sizeVer(15),
+              ProfileFormWidget(title: 'Website'),
+              sizeVer(15),
+              ProfileFormWidget(title: 'Bio'),
 
-          ],
+            ],
+          ),
         ),
       )
     );
