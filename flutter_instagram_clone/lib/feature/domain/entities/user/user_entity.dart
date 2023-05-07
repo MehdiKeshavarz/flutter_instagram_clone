@@ -12,6 +12,7 @@ class UserEntity extends Equatable {
   final List? following;
   final num? totalFollowers;
   final num? totalFollowing;
+  final num? totalPosts;
 
   // will not going to store in DB
   final String? password;
@@ -29,25 +30,27 @@ class UserEntity extends Equatable {
     this.following,
     this.totalFollowers,
     this.totalFollowing,
+    this.totalPosts,
     this.password,
-    this.otherUid});
-
+    this.otherUid,
+  });
 
   @override
   // TODO: implement props
   List<Object?> get props => [
-    uid,
-    username,
-    name,
-    bio,
-    website,
-    email,
-    profileUrl,
-    followers,
-    following,
-    totalFollowers,
-    totalFollowing,
-    password,
-    otherUid
-  ];
+        uid,
+        username,
+        name,
+        bio,
+        website,
+        email,
+        profileUrl,
+        followers,
+        following,
+        totalFollowers,
+        totalFollowing,
+        totalPosts,
+        password,
+        otherUid
+      ];
 }
