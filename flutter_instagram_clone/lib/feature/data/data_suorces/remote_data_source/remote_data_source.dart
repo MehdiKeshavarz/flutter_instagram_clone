@@ -5,7 +5,7 @@ abstract class FirebaseRemoteDataSource{
   Future<void> signInUser(UserEntity user);
   Future<void> signUpUser(UserEntity user);
   Future<bool> isSignIn();
-  Future<void> singOut();
+  Future<void> signOut();
 
   // User Features
   Stream<List<UserEntity>> getUsers(UserEntity user);

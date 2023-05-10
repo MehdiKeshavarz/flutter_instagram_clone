@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 
 const backGroundColor = Color(0xff1C1F2E);
@@ -23,5 +24,24 @@ class PageConst{
   static const String commentPage = "commentPage";
   static const String signUpPage = "signUpPage";
   static const String signInPage = "signInPage";
+}
+
+
+class FirebaseConst{
+  static const String users = 'users';
+  static const String posts = 'posts';
+  static const String comment = 'comment';
+  static const String replay = 'replay';
+}
+
+void toast(String message) {
+  Fluttertoast.showToast(
+      msg: message,
+      toastLength: Toast.LENGTH_SHORT,
+      gravity: ToastGravity.BOTTOM,
+      timeInSecForIosWeb: 1,
+      backgroundColor: blueColor,
+      textColor: Colors.white,
+      fontSize: 16.0);
 }
 
