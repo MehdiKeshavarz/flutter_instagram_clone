@@ -1,8 +1,6 @@
 import 'dart:io';
-
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-
 import '../../../domain/entities/user/user_entity.dart';
 import '../../../domain/usecase/firebase_usecase/user/get_users_usecase.dart';
 import '../../../domain/usecase/firebase_usecase/user/update_user_usecase.dart';
