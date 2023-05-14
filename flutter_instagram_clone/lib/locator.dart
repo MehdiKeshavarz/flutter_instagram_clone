@@ -20,9 +20,9 @@ import 'package:get_it/get_it.dart';
 
 import 'feature/domain/usecase/firebase_usecase/user/update_user_usecase.dart';
 
-GetIt locator = GetIt.instance();
+GetIt locator = GetIt.instance;
 
-Future<void> init() async {
+ Future<void> init() async {
   /// Cubit
   locator.registerFactory(() => AuthCubit(
         getCurrentUidUseCase: locator.call(),
@@ -43,8 +43,7 @@ Future<void> init() async {
   locator.registerFactory(() => GetSingleUserCubit(getSingleUserUseCase: locator.call()));
 
   /// UseCases
-  locator.registerLazySingleton(
-      () => SignInUserUseCase(repository: locator.call()));
+  locator.registerLazySingleton(() => SignInUserUseCase(repository: locator.call()));
   locator.registerLazySingleton(() => SignOutUseCase(repository: locator.call()));
   locator.registerLazySingleton(() => GetUsersUseCase(repository: locator.call()));
   locator.registerLazySingleton(() => SignUpUserUseCase(repository: locator.call()));
@@ -52,7 +51,6 @@ Future<void> init() async {
   locator.registerLazySingleton(() => IsSignInUseCase(repository: locator.call()));
   locator.registerLazySingleton(() => CreateUserUseCase(repository: locator.call()));
   locator.registerLazySingleton(() => GetCurrentUidUseCase(repository: locator.call()));
-  locator.registerLazySingleton(() => GetSingleUserUseCase(repository: locator.call()));
   locator.registerLazySingleton(() => GetSingleUserUseCase(repository: locator.call()));
 
   ///Repository

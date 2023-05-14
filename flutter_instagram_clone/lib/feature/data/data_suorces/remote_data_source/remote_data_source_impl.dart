@@ -75,6 +75,7 @@ class FirebaseRemoteDataSourceImpl implements FirebaseRemoteDataSource{
         firebaseAuth.signInWithEmailAndPassword(email: user.email!, password: user.password!);
       }else{
         print('fields cannot is empty');
+
       }
 
     }on FirebaseAuthException catch (e){
@@ -82,6 +83,7 @@ class FirebaseRemoteDataSourceImpl implements FirebaseRemoteDataSource{
          toast('user not found');
        }else if(e.code == 'wrong-password'){
          toast('Invalid email or password');
+         print(e);
        }
     }
   }
@@ -100,6 +102,7 @@ class FirebaseRemoteDataSourceImpl implements FirebaseRemoteDataSource{
         toast('email already taken');
       }else{
         toast('something went wrong ');
+
       }
     }
   }
